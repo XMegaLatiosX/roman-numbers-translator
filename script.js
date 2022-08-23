@@ -5,7 +5,7 @@ let alertOut = document.getElementById("alert")
 
 function checkVal(val) {
     if(val.match(/[^IVXLCDM0-9]/gi)) {
-        displayReset('', 'This is not a decimal or roman number!')   
+        displayReset('', 'This is not a integer decimal or roman number!')   
     } else if(val.match(/[^IVXLCDM]/gi) != undefined && val.match(/[^0-9]/gi) != undefined) {
         displayReset('', 'Only decimal numbers or only roman number allowed')   
     }else if(val.match(/[0-9]/gi)) {
