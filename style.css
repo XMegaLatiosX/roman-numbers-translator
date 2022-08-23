@@ -1,0 +1,82 @@
+body {
+    background-image: url(bg.png);
+    background-size: cover;
+}
+
+#container {
+    border-radius: 2vh;
+    border: 1vh rgba(0, 0, 0, 0.95) solid;
+    background: rgba(128, 128, 128, 0.95);
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+    width: 55vh;
+    height: 55vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.desc {
+    position: absolute;
+    top: 3vh;
+    font-size: 5vh;
+    margin: 0;
+    width: 100%;
+    height: 40%;
+}
+
+#input {
+    text-align: center;
+    font-family: sans-serif;
+    outline: none;
+    position: absolute;
+    padding: 0vh;
+    font-size: 4vh;
+    border: 0.2vh solid black;
+    width: 75%;
+    height: 15%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0);
+    height: 15%;
+    width: 75%;
+    border: 0.5vh solid rgba(0, 0, 0, 0);
+    border-radius: 1vh;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#output {
+    position: absolute;
+    top: 1vh;
+    font-size: 5vh;
+    color: black;
+}
+
+#alert {
+    position: absolute;
+    font-size: 4vh;
+    width: 90%;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes allowCopy {
+    100% {background: rgba(60, 255, 0, 0.5); border: 0.5vh solid rgba(60, 255, 0, 0.5);}
+}
+@keyframes invalidInput {
+    100% {background: rgba(255, 0, 0, 0.5); border: 0.5vh solid rgba(255, 0, 0, 0.5)}
+}
+@keyframes blank {
+    100% {background: none; border-color: rgba(0, 0, 0, 0);}
+}
